@@ -1,0 +1,12 @@
+#licenseContainer, #pluginList {
+  /*-moz-appearance: listbox;*/
+  margin: 2px 4px;
+  border: 2px solid;
+  -moz-border-top-colors: #443B2E #4C4436;
+  -moz-border-right-colors: #665848 #615344;
+  -moz-border-bottom-colors: #665848 #615344;
+  -moz-border-left-colors: #443B2E #4C4436;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+

@@ -1,0 +1,41 @@
+
+/* main window */
+#kwiclick_main {
+  -moz-appearance: none !important;
+  background-color: #382F26 !important;
+  color: #FFFFFF !important;
+}
+
+#vbox_container_kwiclick {
+  background-color: #382F26 !important;
+  color: #FFFFFF !important;
+  border: 2px solid #3E342A !important;
+}
+
+#vbox_top_kwiclick, #vbox_bottom_kwiclick {
+background-color: #382F26 !important;
+-moz-border-top-colors: #443B2E #665848 !important;
+-moz-border-right-colors: #443B2E #665848 !important;
+-moz-border-bottom-colors: #443B2E #665848 !important;
+-moz-border-left-colors: #443B2E #665848 !important;
+}
+
+
+#kwiclick_main:not([active="true"]) #vbox_top_kwiclick, 
+#kwiclick_main:not([active="true"]) #vbox_bottom_kwiclick {
+background-color: #382F26 !important;
+}
+
+#textbox_search_kwiclick {
+-moz-appearance: none;
+border-width: 1px;
+-moz-border-top-colors: #443B2E !important;
+-moz-border-bottom-colors: #443B2E !important;
+-moz-border-right-colors: #443B2E !important;
+-moz-border-left-colors: #443B2E !important;
+} 
+
+#vbox_authprompt_kwiclick {
+  border-top: 1px solid #665848 !important;
+  border-bottom: 1px solid #443B2E !important;
+}

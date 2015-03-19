@@ -1,0 +1,6 @@
+skin    browser         darkpitch chrome/browser/
+skin    communicator    darkpitch chrome/communicator/
+skin    global          darkpitch chrome/global/
+skin    help            darkpitch chrome/help/
+skin    mozapps         darkpitch chrome/mozapps/
+skin    xpi_skins       darkpitch chrome/xpi_skins/

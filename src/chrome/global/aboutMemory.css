@@ -1,0 +1,49 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://global/content/aboutMemory.css");
+
+html, body {
+background-color: #382F26;
+}
+
+a {
+color: #6969FF;
+}
+
+h1 {
+color: #FFFFFF;
+}
+
+h2 {
+color: #000000;
+}
+
+.hasDesc {
+color: #4444EE;
+}
+
+.mrValue {
+color: #FF0000;
+}
+
+.mrPerc {
+color: #FFFFFF;
+}
+
+.mrSec {
+color: #DDDDDD;
+}
+
+.mrName {
+color: #6969FF;
+}
+
+.section{
+background-color: #000000 !important;
+}
+
+.entries {
+color: #FFFFFF !important;
+}

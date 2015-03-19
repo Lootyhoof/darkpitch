@@ -1,0 +1,151 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== button.css =====================================================
+  == Styles used by the XUL button element.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* :::::::::: button :::::::::: */
+
+button {
+ /*-moz-appearance: button;*/
+  margin: 1px 5px 2px 5px;
+  min-width: 6.3em;
+  border: 3px solid;
+  -moz-border-top-colors: #FFFFFF #44392E #4E4436;
+  -moz-border-right-colors: #FFFFFF #5D5144 #584B3E;
+  -moz-border-bottom-colors: #FFFFFF #685949 #625546;
+  -moz-border-left-colors: #FFFFFF #44392E #4E4436;
+  background-color: #55493B;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+.button-box {
+  border: 1px solid transparent;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  -moz-padding-start: 3px;
+  -moz-padding-end: 4px;
+}
+
+.button-text {
+  margin: 0 !important;
+  text-align: center;
+}
+
+/* .......... focused state .......... */
+
+button:focus {
+-moz-border-top-colors: #BDB09C #44392E #4E4436;
+-moz-border-right-colors: #BDB09C #5D5144 #584B3E;
+-moz-border-bottom-colors: #BDB09C #685949 #625546;
+-moz-border-left-colors: #BDB09C #44392E #4E4436;
+}
+
+button:-moz-focusring > .button-box {
+  border: 1px dotted #BDB09C;
+}
+
+/* .......... default state .......... */
+
+button[default="true"] {
+-moz-border-top-colors: #FFFFFF #44392E #4E4436;
+-moz-border-right-colors: #FFFFFF #5D5144 #584B3E;
+-moz-border-bottom-colors: #FFFFFF #685949 #625546;
+-moz-border-left-colors: #FFFFFF #44392E #434436;
+}
+
+/* .......... active/open/checked state .......... */
+
+button:hover:active,
+button[open="true"],
+button[checked="true"] {
+-moz-border-top-colors: #FFFFFF #7D6F5A #766553;
+-moz-border-right-colors: #FFFFFF #7D6F5A #766553;
+-moz-border-bottom-colors: #FFFFFF #7D6F5A #766553;
+-moz-border-left-colors: #FFFFFF #7D6F5A #766553;
+background-color: #BDB09C;
+color: #000000;
+}
+
+button:hover:active > .button-box:-moz-system-metric(windows-classic),
+button[open="true"] > .button-box:-moz-system-metric(windows-classic),
+button[checked="true"] > .button-box:-moz-system-metric(windows-classic) {
+  padding-top: 2px;
+  padding-bottom: 1px;
+  -moz-padding-start: 4px;
+  -moz-padding-end: 3px;
+}
+
+/* .......... disabled state .......... */
+
+button[disabled="true"] {
+-moz-border-top-colors: #7D6F5A #393228 #433A2E !important;
+-moz-border-right-colors: #7D6F51 #564A3E #4D4538 !important;
+-moz-border-bottom-colors: #7D6F51 #564A3E #4D4538 !important;
+-moz-border-left-colors: #7D6F5A #393228 #433A2E !important;
+background-color: #484034 !important;
+color: #736654 !important;
+}
+
+button[disabled="true"]:-moz-system-metric(windows-classic) {
+  color: #443B2E;
+  text-shadow: 1px 1px #665848;
+}
+
+button[disabled="true"] > .button-box {
+  padding-top: 1px !important;
+  padding-bottom: 2px !important;
+  -moz-padding-start: 3px !important;
+  -moz-padding-end: 4px !important;
+}
+
+/* ::::: menu/menu-button buttons ::::: */
+
+button[type="menu-button"] {
+  margin: 0;
+  border: none;
+}
+
+.button-menu-dropmarker,
+.button-menubutton-dropmarker {
+  -moz-appearance: none !important;
+  margin: 1px;
+  background-color: transparent;
+  border: none;
+  width: 11px;
+  height: 11px;
+}
+
+.button-menubutton-dropmarker[open="true"] {
+  margin-top: 2px;
+  margin-bottom: 0px;
+  -moz-margin-start: 2px;
+  -moz-margin-end: 0px;
+}
+
+/* ::::: plain buttons ::::: */
+
+button.plain {
+  border: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+button[type="disclosure"] {
+  border: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  -moz-appearance: none;
+  list-style-image: url("chrome://global/skin/tree/twisty-clsd.png");
+  min-width: 0px !important;
+  background-color: transparent;
+}
+
+button[type="disclosure"][open="true"] {
+  list-style-image: url("chrome://global/skin/tree/twisty-open.png");
+}

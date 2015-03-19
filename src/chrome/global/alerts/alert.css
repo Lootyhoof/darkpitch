@@ -1,0 +1,71 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== alert.css =====================================================
+  == Styles specific to the alerts dialog.
+  ======================================================================= */
+
+@import url("chrome://global/skin/");
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.alertBox {
+  border: 1px solid #7B969C;
+  background-color: #382F26;
+  min-height: 50px;
+}
+
+.alertBox[orient="horizontal"] > .alertImageBox {
+  -moz-margin-start: 4px;
+  -moz-margin-end: 6px;
+  min-height: 46px;
+}
+
+.alertBox[orient="vertical"] > .alertImageBox {
+  margin-top: 6px;
+  margin-bottom: 4px;
+  min-width: 46px;
+}
+
+.alertTitle {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+#alertImage {
+  max-width: 48px;
+  max-height: 48px;
+}
+
+#alertNotification[clickable="true"] {
+  cursor: pointer;
+}
+
+label {
+  cursor: inherit;
+}
+
+.alertText[clickable="true"] {
+  color: #6969FF;
+  text-decoration: underline;
+}
+
+.alertText[clickable="true"]:hover:active {
+  color: #424F63;
+}
+
+@keyframes alert-animation {
+  from {
+    opacity: 0;
+  }
+  6.25% {
+    opacity: 1;
+  }
+  93.75% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

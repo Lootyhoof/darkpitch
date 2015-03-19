@@ -1,0 +1,46 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+richlistbox {
+  /*-moz-appearance: listbox;*/
+  margin: 2px 4px;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+richlistbox .scrollbox-innerbox {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+richlistbox[disabled="true"] {
+  color: GrayText;
+}
+
+richlistitem {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+richlistitem[selected="true"] {
+  background-color: #615344;
+  color: #FFFFFF;
+}
+
+richlistbox:focus > richlistitem[selected="true"] {
+  background-color: #BDB09C;
+  color: #000000;
+}
+
+richlistbox[seltype="multiple"]:focus > richlistitem[current="true"] {
+  outline: 1px dotted #BDB09C;
+  outline-offset: -1px;
+}
+
+richlistbox[seltype="multiple"]:focus > richlistitem[current="true"][selected="true"] {
+  outline: 1px dotted #F3D982; /* TODO: find a suitable system color */
+}
+

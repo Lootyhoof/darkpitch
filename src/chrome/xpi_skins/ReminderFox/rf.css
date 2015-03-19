@@ -1,0 +1,81 @@
+
+.rmQSearchBox {   /* this is the whole box (XUL parent) */
+  	background: #382F26 !important;
+	border: 1px solid #CCCCCC !important;
+}
+
+.quick-search-textbox {
+	background-color: #000000 !important;
+	color: #FFFFFF !important;
+}
+
+.rmViewBox {   /* this is the whole box (XUL parent) */
+  	background-color: #382F26 !important;
+}
+
+#oe-date-picker-overlay-box {
+   background-color        : #090909 !important;
+}
+ 
+#oe-date-picker-year-controls-box {
+   background-color       : #6699CC !important;
+}
+
+#oe-date-picker-year-title-text {
+	color: #FFFFFF !important;
+}
+
+.oe-date-picker-year-month-box-class {
+   background-color     : #090909 !important;
+}
+
+
+.oe-date-picker-year-month-box-class:hover {
+   background-color     : #C9E8F1 !important;
+   color: #000000 !important;
+}
+
+.oe-date-picker-year-month-box-class[selected="true"] {
+   background-color       : #6699CC !important;
+}
+
+.oe-date-picker-month-day-number-class[selected="true"]
+{
+   background-color       : #6699CC !important;
+}
+
+.oe-date-picker-month-day-box-class {
+   background-color     : #000000 !important;
+}
+
+.oe-date-picker-week-number-box-class   {
+   background-color     : #000000 !important;
+}
+
+/* calendar day box colors */
+
+/* show date boxes with reminders as yellow */
+.oe-date-picker-month-day-box-class[reminder="true"] {
+ 	background-color     : #FFFF99 !important;
+}
+
+/* Show completed reminders as light-grey  */
+.oe-date-picker-month-day-box-class[completedReminder="true"] {
+ 	background-color     : #DBDBDB !important;
+}
+
+.oe-date-picker-month-day-box-class:hover {
+   /*background-color     : #FFFF99; */
+	background-color     : #C9E8F1 !important;
+	color: #000000 !important;
+}
+
+/* Highlight important reminders in red  */
+.oe-date-picker-month-day-box-class[important="true"]{
+   	color                   : #FF0000 !important;
+}
+
+.oe-date-picker-month-days-header-class-red
+{
+	color                   : #FF0000 !important;
+}

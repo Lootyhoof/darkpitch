@@ -1,0 +1,233 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* inset areas */
+
+.inset
+  {
+    border-left           : 1px solid #443B2E;
+    border-top            : 1px solid #443B2E;
+    border-right          : 1px solid #665848;
+    border-bottom         : 1px solid #665848;
+    margin                : 0px 5px 5px 5px;
+  }
+  
+.box-inset {
+  margin: 2px 4px;
+  border: 2px solid;
+  -moz-border-top-colors: #443B2E #4C4436;
+  -moz-border-right-colors: #665848 #615344;
+  -moz-border-bottom-colors: #665848 #615344;
+  -moz-border-left-colors: #443B2E #4C4436;
+  background-color: #000000;
+  color: #FFFFFF;
+}  
+  
+/* formatting */
+.groove-top
+  {
+    border-top            : 2px groove #3E342A;  
+  }
+  
+.groove-right
+  {
+    border-right          : 2px groove #3E342A;
+  }
+  
+.groove-left
+  {
+    border-left           : 2px groove #3E342A;
+  }
+  
+.groove-bottom
+  {
+    border-bottom         : 2px groove #3E342A;
+  }
+  
+.outset
+  {
+    border-left           : 1px solid #665848;
+    border-top            : 1px solid #665848;
+    border-right          : 1px solid #443B2E;
+    border-bottom         : 1px solid #443B2E;
+  }
+  
+.outset-top-bottom
+  {
+    border-top            : 1px solid #665848;
+    border-bottom         : 1px solid #443B2E;
+  }   
+
+
+  
+/** separator rules **/
+/* standard separators */
+  separator, separator[orient="horizontal"] 
+    {
+      height: 1.5em;
+    }
+  
+  separator[orient="vertical"] 
+    {
+      width: 1.5em;
+    }
+
+/* thinner separators (50% size) */
+  separator.thin, separator.thin[orient="horizontal"] 
+    {
+      height: 0.5em;
+    }
+  
+  separator.thin[orient="vertical"] 
+    {
+      width: 0.5em;
+    }
+
+/* groove separators (50% size) */
+  separator.groove,
+  separator.groove[orient="horizontal"] 
+    {
+      border-top: 1px solid #443B2E;
+      border-bottom: 1px solid #665848;
+      height: 0px;
+      margin-top: 0.4em;
+      margin-bottom: 0.4em;
+    }
+  
+  separator.groove[orient="vertical"] 
+    {
+      border-left: 1px solid #443B2E;
+      border-right: 1px solid #665848;
+      -moz-margin-start: 0.4em;
+      -moz-margin-end: 0.4em;
+    }
+  
+/* groove separators (0 padding, for dividing effects) */  
+  separator.groove-thin 
+    {
+      border-top: 1px solid #443B2E;
+      border-bottom: 1px solid #665848;
+      height: 0px;
+    }
+  
+  separator[orient="vertical"].groove-thin 
+    {
+      border-left: 1px solid #443B2E;
+      border-right: 1px solid #665848;
+    }
+
+/** text formatting rules **/
+/* label (with margins) */
+
+/** Reduced Margin for some UI **/
+  .small-margin
+    {
+      margin              : 1px 2px 1px 2px;
+    }
+    
+  .plain 
+    {
+      margin: 0px !important;
+      border: none;
+      padding: 0px;
+    }
+
+  label[disabled="true"] 
+    {
+      color                 : GrayText;
+    }    
+
+  description, label
+    {
+      cursor              : default;
+    }
+    
+  description
+    {
+      margin              : 1px 5px 4px 5px;
+    }
+
+  label
+    {
+      margin-top: 1px;
+      margin-bottom: 2px;
+      -moz-margin-start: 6px;
+      -moz-margin-end: 5px;
+    }
+
+  .header 
+    {
+      font-weight         : bold;
+    }
+
+  .larger-text 
+    {
+      font-size           : larger;
+    }
+
+  .smaller-text 
+    {
+      font-size           : smaller;
+    }
+   
+  .monospace
+    {
+      font-family         : monospace;
+    }
+    
+  .indent
+    {
+      -moz-margin-start         : 23px;
+    }
+
+  .box-padded
+    {
+      padding             : 5px;
+    }    
+
+  .spaced
+    {
+      margin              : 3px 5px 4px 5px;
+    }    
+
+  .wizard-box
+    {
+      padding             : 20px 44px 10px 44px;
+    }    
+
+  .caption-text
+    {
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+      -moz-margin-start: 1px !important;
+      -moz-margin-end: 2px !important;
+    }
+
+
+/* class for text with a 'link' appearance */
+  .text-link
+    {
+      color                 : #6969FF;
+      text-decoration       : underline;
+      border                : 1px solid transparent;
+    }
+  
+  .text-link:focus
+    {
+      color                 : #CCCCFF;
+      border                : 1px dotted #FFFFFF;
+    }
+
+  .text-link:hover
+    {
+      cursor                : pointer;
+    } 
+  
+  .text-link:hover:active
+    {
+      color                 : #CCCCFF;
+    } 
+
+  .text-link[visited="true"] 
+    {
+      color                 : #696969;
+    }

@@ -1,0 +1,66 @@
+.notifier-title {
+   color: #FFFFFF !important;
+}
+
+.notifier-text {
+   color: #DDDDDD !important;
+}
+
+
+.button:hover label {
+  color: #6969FF !important;
+}
+
+.button:active label {
+  color: #2f4778 !important;
+}
+
+
+#facebook-toolbar .typeahead_placeholder {
+  color: #999999 !important;
+}
+
+.facebook-notification[label="?"] label {
+  color: #FFFFFF !important;
+}
+
+.facebook-link {
+  color: #3B5998 !important;
+}
+
+.status {
+   color: #CCCCCC !important;
+/* background-color: #999; TEST */
+}
+
+.stime {
+   color: #999999 !important;
+/* background-color: #333; TEST */
+}
+
+#FacebookHint {
+  color: #808080 !important;
+}
+
+
+#PopupFacebookFriends richlistitem[selected=true],
+#PopupFacebookFriends richlistitem[selected=true] .facebook-link,
+#PopupFacebookFriends richlistitem[selected=true] .stime,
+#PopupFacebookFriends richlistitem[selected=true] .status,
+#SidebarFriendsList richlistitem[selected=true],
+#SidebarFriendsList richlistitem[selected=true] .facebook-link,
+#SidebarFriendsList richlistitem[selected=true] .stime,
+#SidebarFriendsList richlistitem[selected=true] .status,
+#FacebookHint[selected=true] {
+    background-color: #BDB09C !important;
+    color: #000000 !important;
+}
+
+#facebook-search .textbox-input {
+	color: #FFFFFF !important;
+}
+
+#facebook-toolbar-status .textbox-input {
+	color: #FFFFFF !important;
+}
+	

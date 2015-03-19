@@ -1,0 +1,153 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== tabbox.css =================================================
+  == Styles used by XUL tab-related elements.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: tabs ::::: */
+
+.tabs-left,
+.tabs-right {
+  border-bottom: 2px solid;
+  -moz-border-bottom-colors: #665848 #615344;
+}
+
+/* ::::: tabpanels ::::: */
+tabbrowser tabpanels { background-color: #000000 !important; }
+
+tabpanels {
+  /*-moz-appearance: tabpanels;*/
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  -moz-border-right-colors: #FFFFFF #453D32 #3E362C;
+  -moz-border-bottom-colors: #FFFFFF #453D32 #3E362C;
+  -moz-border-left-colors: #FFFFFF #201D19 #2F2822;
+  padding: 5px;
+  background-color: #382F26;
+  color: #FFFFFF;
+}
+
+/* ::::: tab ::::: */
+
+tab 
+{
+  /*-moz-appearance: tab;*/
+  margin: 0px;
+  border: 2px solid;
+  border-bottom-width: 2px;
+  -moz-border-top-colors: #FFFFFF #6F5F4F #67584A;
+  -moz-border-right-colors: #FFFFFF #6F5F4F #67584A;
+  -moz-border-bottom-colors: #FFFFFF #67584A;
+  -moz-border-left-colors: #FFFFFF #6F5F4F #67584A;
+  border-radius: 3px 3px 0px 0px;
+  padding: 1px 3px;
+  background-color: #382F26;
+  color: #FFFFFF;
+  font: menu;
+}
+
+tab:-moz-locale-dir(rtl) {
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 0px;
+}
+
+.tab-text {
+  margin: 0 !important;
+}
+
+tab[selected="true"] {
+  margin-top: 0;
+  border-bottom-color: transparent;
+  /*padding: 1px 6px 4px 6px;*/
+  padding: 1px 6px 3px 6px; /*reduced space too, baby!*/
+}
+
+tab:-moz-focusring > .tab-middle {
+  /* Don't specify the outline-color, we should always use initial value. */
+  outline: 1px dotted;
+}
+
+tab[beforeselected="true"]:-moz-locale-dir(ltr),
+tab[selected="true"]:-moz-locale-dir(rtl) + tab {
+  border-right: none;
+  border-top-right-radius: 0;
+}
+
+tab[selected="true"]:-moz-locale-dir(ltr) + tab,
+tab[beforeselected="true"]:-moz-locale-dir(rtl) {
+  border-left: none;
+  border-top-left-radius: 0;
+}
+
+tab:first-of-type[selected="true"] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+/* ..... active state ..... */
+
+tab:hover:active {
+-moz-border-top-colors: transparent #7E6F5A #766553;
+-moz-border-right-colors: transparent #7E6F5A #766553;
+-moz-border-left-colors: transparent #7E6F5A #766553;
+background-color: #746552;
+color: #000000;
+}
+
+/* ..... selected state ..... */
+
+tab[selected="true"],
+tab:hover:active[selected="true"] {
+-moz-border-top-colors: #FFFFFF #201D19 #2F2822;
+-moz-border-right-colors: #FFFFFF #453D32 #3E362C;
+-moz-border-bottom-colors: transparent;
+-moz-border-left-colors: #FFFFFF #201D19 #2F2822;
+background-color: #382F26;
+color: #FFFFFF;
+}
+
+
+/* ::::: tab-bottom ::::::::::
+   :: Tabs that are attached to the bottom of a panel, but not necessarily
+   :: a tabpanels.
+   ::::: */
+
+.tab-bottom {
+  margin-top: 0;
+  margin-bottom: 2px;
+  border-top: 1px solid;
+  border-bottom: 2px solid;
+-moz-border-top-colors: #FFFFFF #736250 #736250;
+-moz-border-bottom-colors: #FFFFFF #7E6F5A #766553 #72614F;
+border-radius: 0px 0px 3px 3px;
+padding: 2px 4px 1px 4px;
+}
+
+.tab-bottom[selected="true"] {
+-moz-border-top-colors: transparent !important;
+-moz-border-bottom-colors: #FFFFFF #201D19 #2F2822 transparent !important;
+}
+
+.tab-bottom[beforeselected="true"]:-moz-locale-dir(ltr),
+.tab-bottom[selected="true"]:-moz-locale-dir(rtl) + .tab-bottom {
+  border-bottom-right-radius: 0;
+}
+
+.tab-bottom[selected="true"]:-moz-locale-dir(ltr) + .tab-bottom,
+.tab-bottom[beforeselected="true"]:-moz-locale-dir(rtl) {
+  border-bottom-left-radius: 0;
+}
+
+/* ::::: tabs-bottom ::::: */
+
+.tabs-bottom > .tabs-left,
+.tabs-bottom > .tabs-right {
+  border-top: 1px solid #FFFFFF;
+  border-bottom: none;
+}
+

@@ -1,0 +1,71 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/*DOM Inspector theme*/
+
+
+/* :::::::: node type color coding :::::::: */
+
+treechildren::-moz-tree-cell-text(ACCESSIBLE_NODE) {
+  font-weight: bold !important;
+}
+
+treechildren::-moz-tree-cell-text(ELEMENT_NODE) {
+  color: #FFFFFF !important;
+}
+
+treechildren::-moz-tree-cell-text(ATTRIBUTE_NODE) {
+  color: #AACC66 !important;
+}
+
+treechildren::-moz-tree-cell-text(CDATA_SECTION_NODE),
+treechildren::-moz-tree-cell-text(TEXT_NODE) {
+  color: #6969FF !important;
+}
+
+treechildren::-moz-tree-cell-text(COMMENT_NODE) {
+  color: #228b22 !important;
+}
+
+treechildren::-moz-tree-cell-text(DOCUMENT_NODE) {
+  color: #CC00CC !important;
+}
+
+treechildren::-moz-tree-cell-text(DOCUMENT_TYPE_NODE) {
+  color: #CCCC00 !important;
+}
+
+treechildren::-moz-tree-cell-text(PROCESSING_INSTRUCTION_NODE) {
+  color: #808080 !important;
+}
+
+treechildren::-moz-tree-cell-text(anonymous) {
+  color: #ff0000 !important;
+}
+
+treechildren::-moz-tree-cell-text(selected, focus) {
+  color: #000000 !important;
+}
+
+/* :::::::: drag and drop insertion indicators :::::::: */
+
+treechildren::-moz-tree-column(dnd-insert-before) {
+  border-left: 2px solid #FFFFFF !important;
+}
+
+treechildren::-moz-tree-column(dnd-insert-after) {
+  border-right: 2px solid #FFFFFF !important;
+}
+
+.multipanel-label-box {
+  border-bottom: 1px solid #443B2E;
+  background-color: #3E342A;
+  color: #FFFFFF;
+}
+
+.multipanel-label-box-2 {
+  border: 1px outset #3E342A;
+  padding: 2px 4px;
+}
+
+multipanel[disabled="true"] > .multipanel-label-box {
+  color: #443B2E;
+}

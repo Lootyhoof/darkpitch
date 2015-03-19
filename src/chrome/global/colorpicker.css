@@ -1,0 +1,68 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== colorpicker.css ================================================
+  == Styles used by the XUL colorpicker element.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: colorpicker button ::::: */
+ 
+/* colorpicker button */
+
+colorpicker[type="button"] {
+  /*-moz-appearance: button;*/
+  width: 38px;
+  height: 24px;
+  border: 2px solid;
+  -moz-border-top-colors: #615344 #665848;
+  -moz-border-right-colors: #4C4436 #443B2E;
+  -moz-border-bottom-colors: #4C4436 #443B2E;
+  -moz-border-left-colors: #615344 #665848;
+  background-color: #3E342A;
+  padding: 3px;
+}
+
+.colorpicker-button-colorbox {
+  border: 1px solid #000000;
+}
+
+colorpicker[type="button"]:focus {
+  -moz-border-top-colors: #4C4436 #665848;
+  -moz-border-right-colors: #4C4436 #443B2E;
+  -moz-border-bottom-colors: #4C4436 #443B2E;
+  -moz-border-left-colors: #4C4436 #665848;
+}
+
+colorpicker[type="button"][open="true"] {
+  -moz-border-top-colors: #4C4436 #443B2E;
+  -moz-border-right-colors: #4C4436 #443B2E;
+  -moz-border-bottom-colors: #4C4436 #443B2E;
+  -moz-border-left-colors: #4C4436 #443B2E;
+}
+
+/* ::::: colorpicker tiles ::::: */
+
+.colorpickertile {
+  width: 20px;
+  height: 20px;
+  margin: 1px;
+  border-left: 1px solid #443B2E;
+  border-top: 1px solid #443B2E;
+  border-right: 1px solid #665848;
+  border-bottom: 1px solid #665848;
+}
+
+.colorpickertile[selected="true"] {
+  border: 2px outset #C0C0C0;
+}
+
+.colorpickertile[hover="true"] {
+  border: 2px dotted #FFFFFF;
+}
+
+.cp-light[hover="true"] {
+  border: 2px dotted #909090;
+}

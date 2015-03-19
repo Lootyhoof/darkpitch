@@ -1,0 +1,135 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== splitter.css ===================================================
+  == Styles used by the XUL splitter element.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: splitter (vertical) ::::: */
+
+splitter {
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  cursor: ew-resize;
+  border-width: 0 2px;
+  border-style: solid;
+  -moz-border-left-colors: #685B4D #201A10;
+  -moz-border-right-colors: #C4BEB0 #554B40;
+  min-width: 6px;
+  background-color: #3E342A;
+}
+
+splitter[state="collapsed"][collapse="before"],
+splitter[state="collapsed"][substate="before"],
+splitter[state="collapsed"][collapse="after"]:-moz-locale-dir(rtl),
+splitter[state="collapsed"][substate="after"]:-moz-locale-dir(rtl) {
+  cursor: e-resize;
+}
+
+splitter[state="collapsed"][collapse="after"],
+splitter[state="collapsed"][substate="after"],
+splitter[state="collapsed"][collapse="before"]:-moz-locale-dir(rtl),
+splitter[state="collapsed"][substate="before"]:-moz-locale-dir(rtl) {
+  cursor: w-resize;
+}
+
+splitter:-moz-lwtheme {
+  background: none;
+}
+
+/* ::::: splitter (horizontal) ::::: */
+
+splitter[orient="vertical"] {
+  cursor: ns-resize;
+  border-width: 2px 0;
+-moz-border-top-colors: #685B4D #201A10;
+-moz-border-bottom-colors: #C4BEB0 #554B40;
+  min-height: 6px;
+}
+
+splitter[orient="vertical"][state="collapsed"][collapse="before"],
+splitter[orient="vertical"][state="collapsed"][substate="before"] {
+  cursor: s-resize;
+}
+
+splitter[orient="vertical"][state="collapsed"][collapse="after"],
+splitter[orient="vertical"][state="collapsed"][substate="after"] {
+  cursor: n-resize;
+}
+
+splitter[disabled="true"] {
+  cursor: default !important;
+}
+
+/* ::::: splitter grippy ::::: */
+
+grippy {
+  cursor: pointer;
+  border-top: 1px solid #665848;
+  border-bottom: 1px solid #665848;
+  min-width: 4px;
+  min-height: 115px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+grippy:hover {
+  background-color: #BDB09C;
+}
+
+splitter[orient="vertical"] > grippy {
+  border-top: none;
+  border-right: 1px solid #665848;
+  border-bottom: none;
+  border-left: 1px solid #665848;
+  min-width: 115px;
+  min-height: 4px;
+}
+  
+/* ..... normal state ..... */
+
+/* vertical grippies */
+splitter[collapse="before"] > grippy,
+splitter[collapse="after"] > grippy:-moz-locale-dir(rtl) {
+  background-image: url("chrome://global/skin/splitter/grip-vrt-before.gif");
+}
+
+splitter[collapse="after"] > grippy,
+splitter[collapse="before"] > grippy:-moz-locale-dir(rtl) {
+  background-image: url("chrome://global/skin/splitter/grip-vrt-after.gif");
+}
+
+/* horizontal grippies */
+splitter[collapse="before"][orient="vertical"] > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-hrz-before.gif");
+}  
+
+splitter[collapse="after"][orient="vertical"] > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-hrz-after.gif");
+}  
+  
+/* ..... collapsed state ..... */
+
+/* vertical grippies */
+splitter[collapse="before"][state="collapsed"] > grippy,
+splitter[collapse="after"][state="collapsed"] > grippy:-moz-locale-dir(rtl) {
+  background-image: url("chrome://global/skin/splitter/grip-vrt-after.gif");
+}
+
+splitter[collapse="after"][state="collapsed"] > grippy,
+splitter[collapse="before"][state="collapsed"] > grippy:-moz-locale-dir(rtl) {
+  background-image: url("chrome://global/skin/splitter/grip-vrt-before.gif");
+}
+
+/* horizontal grippies */
+splitter[collapse="before"][state="collapsed"][orient="vertical"] > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-hrz-after.gif");
+}  
+
+splitter[collapse="after"][state="collapsed"][orient="vertical"] > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-hrz-before.gif");
+}  
+

@@ -1,0 +1,3 @@
+#main-window[tabsintitlebar]:not([inFullscreen]) #toolbar-menubar[inactive] ~ #TabsToolbar:not(:-moz-lwtheme){
+  background: none !important;
+}

@@ -1,0 +1,43 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* This is for styling the menus of the viewsource window */
+
+browser #viewsource span{
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.doctype{
+	color: #CCCCCC;
+}
+
+.start-tag{
+	color: #FF3399;
+}
+
+.attribute-name{
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.attribute-value{
+	color: #9999FF;
+}
+
+.error{
+	color: #FF0000;
+}
+
+.comment{
+	color: #99FF99;
+}
+
+.entity{
+	color: #FF0000;
+}
+
+.end-tag{
+	color: #FF3399;
+}
