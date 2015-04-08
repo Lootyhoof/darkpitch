@@ -6,7 +6,7 @@
 	<Description about="urn:mozilla:install-manifest">
 		<!-- Provide theme GUID-->
 		<em:id>{4b13c0da-55d5-44ce-b98e-98e62085837f}</em:id>
-		<em:version>1.0.0</em:version>
+		<em:version>1.0.1</em:version>
 		<em:type>4</em:type>
 
 		<!-- Target Applications this extension can install into,
