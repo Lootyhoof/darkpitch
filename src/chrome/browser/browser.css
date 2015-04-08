@@ -8,13 +8,23 @@
 @namespace html url("http://www.w3.org/1999/xhtml");
 
 
-#main-window:after {
-  color: white !important; /* make titlebar white since we have a dark titlebar */
-  text-shadow: none !important;
+/* Make titlebar text light/dark depending on persona */
+@media all and (-moz-windows-theme: aero), (-moz-windows-glass), all and (-moz-windows-compositor) {
+#main-window[sizemode="normal"]:after{ /* make titlebar white since we have a dark titlebar */
+    color: white !important;
+	text-shadow: none !important;
+}
+#main-window[sizemode="normal"]:-moz-lwtheme-darktext:after{
+     color: black !important;
+}
 }
 
-#main-window:-moz-lwtheme-darktext:after{
-     color: black !important; /* just in case there's a bright persona... */
+#main-window[sizemode="maximized"]:after{
+    color: white !important;
+	text-shadow: none !important;
+}
+#main-window[sizemode="maximized"]:-moz-lwtheme-darktext:after{
+     color: black !important;
 }
 
 #menubar-items {
