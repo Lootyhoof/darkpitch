@@ -1,34 +1,30 @@
 <?xml version="1.0"?>
 
+<!-- This Source Code is subject to the terms of the Mozilla Public License
+   - version 2.0 (the "License"). You can obtain a copy of the License at
+   - http://mozilla.org/MPL/2.0/. -->
+
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+    xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
-	<Description about="urn:mozilla:install-manifest">
-		<!-- Provide theme GUID-->
-		<em:id>{4b13c0da-55d5-44ce-b98e-98e62085837f}</em:id>
-		<em:version>1.0.1</em:version>
-		<em:type>4</em:type>
+  <Description about="urn:mozilla:install-manifest">
+	<em:id>{4b13c0da-55d5-44ce-b98e-98e62085837f}</em:id>
+	<em:version>1.0.1</em:version>
+    <em:name>DarkPitch</em:name>
+    <em:description>Minimalistic, dark-colored theme. Fork of "PitchDark" by Tim Banker</em:description>
+    <em:creator>Lootyhoof</em:creator>
+    <em:type>4</em:type>
+    <em:internalName>darkpitch</em:internalName>
 
-		<!-- Target Applications this extension can install into,
-        with minimum and maximum supported versions. -->
-
-		<!-- Pale Moon -->
-		<em:targetApplication>
-			<Description>
-				<em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
-				<em:minVersion>24.0</em:minVersion>
-				<em:maxVersion>25.*</em:maxVersion>
-			</Description>
-		</em:targetApplication>
-
-		<!-- General Addon Metadata -->
-		<em:name>DarkPitch</em:name>
-		<em:description>Minimalistic, dark-colored theme. Fork of "PitchDark" by Tim Banker</em:description>
-		<em:creator>Lootyhoof</em:creator>
-		<em:contributor>Tim Banker</em:contributor>
-
-		<!-- Front End Integration Hooks (used by Theme Manager)-->
-		<em:internalName>darkpitch</em:internalName>
-	</Description>
-
+    <em:contributor>Tim Banker</em:contributor>
+		
+	<em:targetApplication>
+      <Description>
+        <!-- Pale Moon -->
+        <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
+        <em:minVersion>25.0</em:minVersion>
+        <em:maxVersion>26.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
 </RDF>
