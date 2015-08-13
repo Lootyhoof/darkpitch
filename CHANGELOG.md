@@ -5,6 +5,7 @@
 - fix window borders on Windows 10
 - don't animate popups on non-Windows
 - style alltabs panel correctly
+- fix download button mappings
 
 ### 1.0.1
 - titlebar fix
