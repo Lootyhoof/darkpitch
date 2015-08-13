@@ -9,9 +9,14 @@
 
 @media all and (-moz-windows-theme: aero), (-moz-windows-glass), all and (-moz-windows-compositor) {
   #main-window:not(:-moz-lwtheme):after{ /* make titlebar white since we have a dark titlebar */
-      color: white !important;
+    color: white !important;
   	text-shadow: none !important;
   }
+}
+
+#main-window[sizemode="maximized"]:not(:-moz-lwtheme):after{
+  color: white !important;
+  text-shadow: none !important;
 }
 
 #menubar-items {
