@@ -4,3 +4,5 @@ skin    global          darkpitch chrome/global/
 skin    help            darkpitch chrome/help/
 skin    mozapps         darkpitch chrome/mozapps/
 skin    xpi_skins       darkpitch chrome/xpi_skins/
+skin	appver			darkpitch chrome/appver/25/ appversion<=26.0.0b2
+skin	appver			darkpitch chrome/appver/26/ appversion>26.0.0b2
