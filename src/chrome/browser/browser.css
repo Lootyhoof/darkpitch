@@ -516,7 +516,7 @@ menuitem.bookmark-item {
   list-style-image: url("chrome://browser/skin/Toolbar.png");
 }
 
-.toolbarbutton-1:-moz-lwtheme-brighttext {
+.toolbarbutton-1:-moz-lwtheme-darktext {
   list-style-image: url("chrome://browser/skin/Toolbar-inverted.png");
 }
 
