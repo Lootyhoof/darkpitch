@@ -214,7 +214,6 @@
      * We can't use -moz-win-glass there because the border sizing would
      * not be correct. */
     #main-window {
-      background-color: transparent;
       -moz-appearance: -moz-win-borderless-glass;
     }
     
