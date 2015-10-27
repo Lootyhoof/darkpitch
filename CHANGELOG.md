@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.1.2
+- (PM26) fix window background on Aero
+
 ### 1.1.1
 - (Win10) shade window background on Pale Moon 26 builds later than b2
 - (Win10) use inverted caption buttons by default on later PM26 builds
