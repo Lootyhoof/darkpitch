@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.2.0
+- (PM26) add history menu button
+- show more icons in history/bookmarks menus
+- implement larger appmenu images on HiDPI displays
+- remove double padlocks
+
 ### 1.1.2
 - (PM26) fix window background on Aero
 
