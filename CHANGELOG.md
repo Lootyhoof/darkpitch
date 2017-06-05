@@ -1,5 +1,14 @@
 # Changelog
 
+### 1.6.0
+- sync about:support styling with default
+- sync about:permissions styling with default
+- add image document favicon when viewing standalone images
+- fix "learn more" links in notification popups
+- sync devtools styling with default
+- allow extensions to style their own toolbarbutton-badge
+- add basic about:home styling for Home Styler
+
 ### 1.5.0
 - support PM27's devtools
 - drop PM26 support
