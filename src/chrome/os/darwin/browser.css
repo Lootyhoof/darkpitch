@@ -1,0 +1,32 @@
+/* ensure titlebar on privacy windows is of correct size */
+#titlebar {
+  height: 22px;
+}
+
+/* ensure extra titlebar doesn't appear on normal (e.g. non-privacy) windows */
+#main-window:not([privatebrowsingmode=temporary]):not(:-moz-lwtheme) > #titlebar > #titlebar-content > #titlebar-buttonbox-container,
+#main-window:not([drawintitlebar=true]):not(:-moz-lwtheme) > #titlebar {
+  display: none;
+}
+
+#titlebar-spacer {
+  display: none;
+}
+
+#titlebar-buttonbox-container {
+  margin-left: 7px;
+  margin-top: 3px;
+}
+
+#main-window:-moz-lwtheme > #titlebar {
+  -moz-appearance: none !important;
+}
+
+/* Private browsing indicator */
+
+#main-window[privatebrowsingmode=temporary] #TabsToolbar::before {
+  display: -moz-box;
+  content: "";
+  background: url("chrome://browser/skin/privatebrowsing-light.png") center no-repeat;
+  width: 30px;
+}
