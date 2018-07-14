@@ -755,7 +755,7 @@ menuitem.bookmark-item {
   list-style-image: url("chrome://browser/skin/Toolbar.png");
 }
 
-.toolbarbutton-1:-moz-lwtheme-darktext {
+toolbar:not([brighttext]) .toolbarbutton-1 {
   list-style-image: url("chrome://browser/skin/Toolbar-inverted.png");
 }
 
@@ -768,12 +768,12 @@ menuitem.bookmark-item {
 
 .toolbarbutton-1 > .toolbarbutton-menu-dropmarker,
 .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker {
-  list-style-image: url("chrome://browser/skin/toolbarbutton-dropdown-arrow.png");
+  list-style-image: url("chrome://browser/skin/toolbarbutton-dropdown-arrow-inverted.png");
 }
 
-.toolbarbutton-1 > .toolbarbutton-menu-dropmarker:-moz-lwtheme-brighttext,
-.toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker:-moz-lwtheme-brighttext {
-  list-style-image: url("chrome://browser/skin/toolbarbutton-dropdown-arrow-inverted.png");
+toolbar:not([brighttext]) .toolbarbutton-1 > .toolbarbutton-menu-dropmarker,
+toolbar:not([brighttext]) .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker {
+  list-style-image: url("chrome://browser/skin/toolbarbutton-dropdown-arrow.png");
 }
 
 .toolbarbutton-1 > .toolbarbutton-icon,
@@ -1094,7 +1094,7 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
 #home-button.bookmark-item {
   list-style-image: url("chrome://browser/skin/Toolbar.png");
 }
-#home-button.bookmark-item:-moz-lwtheme-brighttext {
+toolbar:not([brighttext]) #home-button.bookmark-item {
   list-style-image: url("chrome://browser/skin/Toolbar-inverted.png");
 }
 #home-button {
@@ -1117,7 +1117,7 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
 #bookmarks-menu-button.bookmark-item {
   list-style-image: url("chrome://browser/skin/Toolbar.png");
 }
-#bookmarks-menu-button.bookmark-item:-moz-lwtheme-brighttext {
+toolbar:not([brighttext]) #bookmarks-menu-button.bookmark-item {
   list-style-image: url("chrome://browser/skin/Toolbar-inverted.png");
 }
 
@@ -1997,16 +1997,16 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
 
 .tabbrowser-arrowscrollbox > .scrollbutton-up,
 .tabbrowser-arrowscrollbox > .scrollbutton-down {
-  list-style-image: url("chrome://browser/skin/tabbrowser/tab-arrow-left.png");
+  list-style-image: url("chrome://browser/skin/tabbrowser/tab-arrow-left-inverted.png");
   margin: 0;
   padding-right: 2px;
   border-right: 2px solid transparent;
   background-origin: border-box;
 }
 
-.tabbrowser-arrowscrollbox > .scrollbutton-up:-moz-lwtheme-brighttext,
-.tabbrowser-arrowscrollbox > .scrollbutton-down:-moz-lwtheme-brighttext {
-  list-style-image: url(chrome://browser/skin/tabbrowser/tab-arrow-left-inverted.png);
+toolbar:not([brighttext]) .tabbrowser-arrowscrollbox > .scrollbutton-up,
+toolbar:not([brighttext]) .tabbrowser-arrowscrollbox > .scrollbutton-down {
+  list-style-image: url(chrome://browser/skin/tabbrowser/tab-arrow-left.png);
 }
 
 .tabbrowser-arrowscrollbox > .scrollbutton-up[disabled],
@@ -2043,14 +2043,14 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
 .tabs-newtab-button,
 #TabsToolbar > #new-tab-button,
 #TabsToolbar > toolbarpaletteitem > #new-tab-button {
-  list-style-image: url(chrome://browser/skin/tabbrowser/newtab.png);
+  list-style-image: url(chrome://browser/skin/tabbrowser/newtab-inverted.png);
   -moz-image-region: auto;
 }
 
-.tabs-newtab-button:-moz-lwtheme-brighttext,
-#TabsToolbar > #new-tab-button:-moz-lwtheme-brighttext,
-#TabsToolbar > toolbarpaletteitem > #new-tab-button:-moz-lwtheme-brighttext {
-  list-style-image: url(chrome://browser/skin/tabbrowser/newtab-inverted.png);
+.tabs-newtab-button:-moz-lwtheme-darktext,
+toolbar:not([brighttext]) #TabsToolbar > #new-tab-button,
+toolbar:not([brighttext]) #TabsToolbar > toolbarpaletteitem > #new-tab-button {
+  list-style-image: url(chrome://browser/skin/tabbrowser/newtab.png);
 }
 
 .tabs-newtab-button {
@@ -2062,11 +2062,11 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
 }
 
 #alltabs-button {
-  list-style-image: url("chrome://browser/skin/toolbarbutton-dropdown-arrow.png");
+  list-style-image: url("chrome://browser/skin/toolbarbutton-dropdown-arrow-inverted.png");
 }
 
-#alltabs-button:-moz-lwtheme-brighttext {
-  list-style-image: url("chrome://browser/skin/toolbarbutton-dropdown-arrow-inverted.png");
+toolbar:not([brighttext]) #alltabs-button {
+  list-style-image: url("chrome://browser/skin/toolbarbutton-dropdown-arrow.png");
 }
 
 #alltabs-button > .toolbarbutton-icon {
