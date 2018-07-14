@@ -1,0 +1,8 @@
+/* Private browsing indicator */
+
+#main-window[privatebrowsingmode=temporary] #toolbar-menubar[autohide="true"] ~ #TabsToolbar::before {
+  display: -moz-box;
+  content: "";
+  background: url("chrome://browser/skin/privatebrowsing-light.png") center no-repeat;
+  width: 30px;
+}

@@ -6,6 +6,7 @@ skin    help            darkpitch chrome/help/
 skin    mozapps         darkpitch chrome/mozapps/
 skin    xpi_skins       darkpitch chrome/xpi_skins/
 skin    os              darkpitch chrome/os/darwin/ os=Darwin
+skin    os              darkpitch chrome/os/linux/ os=Linux
 skin    appver          darkpitch chrome/appver/27/ appversion<28.0.0b1
 skin    appver          darkpitch chrome/appver/28/ appversion>=28.0.0b1
 
