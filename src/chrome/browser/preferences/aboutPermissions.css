@@ -5,13 +5,14 @@
 @import url("chrome://global/skin/inContentUI.css");
 
 #permissions-page {
-background-color: #382F26;
-color: #FFFFFF;
+  background-color: #382F26;
+  color: #FFFFFF;
 }
 
 #permissions-content {
-background-color: #000000;
-color: #FFFFFF;
+  background-color: #000000;
+  color: #FFFFFF;
+  height: 100%;
 }
 
 /* header */
