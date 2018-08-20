@@ -97,8 +97,8 @@
     {
       border-left: 1px solid #443B2E;
       border-right: 1px solid #665848;
-      -moz-margin-start: 0.4em;
-      -moz-margin-end: 0.4em;
+      margin-inline-start: 0.4em;
+      margin-inline-end: 0.4em;
     }
   
 /* groove separators (0 padding, for dividing effects) */  
@@ -150,8 +150,8 @@
     {
       margin-top: 1px;
       margin-bottom: 2px;
-      -moz-margin-start: 6px;
-      -moz-margin-end: 5px;
+      margin-inline-start: 6px;
+      margin-inline-end: 5px;
     }
 
   .header 
@@ -176,7 +176,7 @@
     
   .indent
     {
-      -moz-margin-start         : 23px;
+      margin-inline-start         : 23px;
     }
 
   .box-padded
@@ -198,8 +198,8 @@
     {
       margin-top: 0px !important;
       margin-bottom: 0px !important;
-      -moz-margin-start: 1px !important;
-      -moz-margin-end: 2px !important;
+      margin-inline-start: 1px !important;
+      margin-inline-end: 2px !important;
     }
 
 
