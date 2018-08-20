@@ -9,4 +9,3 @@ skin    os              darkpitch chrome/os/darwin/ os=Darwin
 skin    os              darkpitch chrome/os/linux/ os=Linux
 
 override chrome://browser/skin/autocomplete.css chrome://global/skin/autocomplete.css
-override chrome://browser/skin/permissions/aboutPermissions.css chrome://browser/skin/preferences/aboutPermissions.css
