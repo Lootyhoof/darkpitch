@@ -98,7 +98,7 @@ padding-bottom: 0px;
 
 /* ..... focused state ..... */
 
-menulist:focus:not([open="true"]):not(.menulist-compact) > .menulist-label-box {
+menulist:focus:not([open="true"]) > .menulist-label-box {
 background-color: #BDB09C;
 color: #000000;
 }
@@ -138,51 +138,4 @@ background: inherit;
 background-image: none;/*Fix a bug with the Googlebar search bar*/
 font: inherit;
 color: #FFFFFF;
-}
-
-/* ::::: compact menulists ::::: */
-
-.menulist-compact {
--moz-appearance: none;
--moz-box-align: center;
--moz-box-pack: center;
-margin: 0;
-border: 2px solid;
--moz-border-top-colors: #612A22 #594C3F;
--moz-border-right-colors: #A29E91 #665645;
--moz-border-bottom-colors: #A29E91 #665645;
--moz-border-left-colors: #612A22 #594C3F;
-padding: 1px;
-min-height: 0px;
-background-color: #594C3F;
-color: #FFFFFF;
-}
-
-.menulist-compact > .menulist-label {
-margin: 0 3px !important;
-text-align: right;
-}
-
-.menulist-compact > .menulist-dropmarker {
--moz-margin-start: 3px;
-border: none;
-padding: 0 !important;
-background: transparent;
-}
-
-.menulist-compact[open="true"] {
--moz-border-top-colors: #877868 #6E5D4B;
--moz-border-right-colors: #A29E91 #877868;
--moz-border-bottom-colors: #A29E91 #877868;
--moz-border-left-colors: #877868 #6E5D4B;
-background-color: #6E5D4B;
-color: #FFFFFF;
-}
-
-.menulist-compact[disabled="true"] {
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn-dis.gif");
-}
-
-.menulist-compact:-moz-focusring:not([open="true"]) > .menulist-label-box {
-  border: 1px dotted;
 }
