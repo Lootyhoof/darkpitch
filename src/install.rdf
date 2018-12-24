@@ -9,7 +9,7 @@
 
   <Description about="urn:mozilla:install-manifest">
 	<em:id>{4b13c0da-55d5-44ce-b98e-98e62085837f}</em:id>
-	<em:version>1.9.0</em:version>
+	<em:version>1.10.0</em:version>
     <em:name>DarkPitch</em:name>
     <em:description>Minimalistic, dark-colored theme. Fork of "PitchDark" by Tim Banker</em:description>
     <em:creator>Lootyhoof</em:creator>
