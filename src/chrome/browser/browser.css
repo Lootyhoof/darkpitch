@@ -2004,7 +2004,8 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
 
 /* Tab sound indicator */
 .tab-icon-sound {
-  -moz-margin-start: 4px;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
   width: 16px;
   height: 16px;
   padding: 0;
