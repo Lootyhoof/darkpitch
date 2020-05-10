@@ -5,8 +5,8 @@ skin    global          darkpitch chrome/global/
 skin    help            darkpitch chrome/help/
 skin    mozapps         darkpitch chrome/mozapps/
 skin    xpi_skins       darkpitch chrome/xpi_skins/
+skin    os              darkpitch chrome/os/linux/
 skin    os              darkpitch chrome/os/darwin/ os=Darwin
-skin    os              darkpitch chrome/os/linux/ os=Linux
 skin    os              darkpitch chrome/os/winnt/ os=WINNT
 
 override chrome://browser/skin/autocomplete.css chrome://global/skin/autocomplete.css
