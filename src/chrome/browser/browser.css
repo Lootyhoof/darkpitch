@@ -1228,14 +1228,28 @@ toolbar:not([brighttext]) #bookmarks-menu-button.bookmark-item {
 /* ::::: fullscreen window controls ::::: */
 
 #window-controls {
+  -moz-box-align: start;
+  /* Make sure the window controls are always last on the toolbar */
+  -moz-box-ordinal-group: 100;
   margin-inline-start: 4px;
+}
+
+#main-window[tabsontop=false] #window-controls {
+  margin-top: -1px;
+}
+
+toolbar[brighttext] #window-controls > toolbarbutton:not(#close-button) {
+  filter: invert(1);
 }
 
 #minimize-button,
 #restore-button,
 #close-button {
+  -moz-appearance: none;
+  border-style: none;
   list-style-image: url("chrome://global/skin/icons/windowControls.png");
   padding: 0;
+  margin: 0 0 2px 2px;
 }
 
 #minimize-button {
@@ -1258,9 +1272,6 @@ toolbar:not([brighttext]) #bookmarks-menu-button.bookmark-item {
 }
 #close-button {
   -moz-image-region: rect(0, 48px, 16px, 32px);
-  -moz-appearance: none;
-  border-style: none;
-  margin: 2px;
 }
 #close-button:hover {
   -moz-image-region: rect(16px, 48px, 32px, 32px);
