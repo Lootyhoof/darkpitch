@@ -1508,8 +1508,20 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
   background-repeat: no-repeat;
 }
 
+#urlbar[pageproxystate="valid"] > #identity-box.mixedContent {
+  color: rgb(197, 197, 1);
+  margin-inline-end: 4px;
+  background-image: linear-gradient(rgb(48,48,4,1),
+                                    rgba(48,48,4,.8) 25%,
+                                    rgba(48,48,4,.8) 75%,
+                                    rgba(48,48,4,1));
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
 #identity-box.verifiedIdentity:-moz-locale-dir(rtl),
-#identity-box.verifiedDomain:-moz-locale-dir(rtl) {
+#identity-box.verifiedDomain:-moz-locale-dir(rtl),
+#identity-box.mixedContent:-moz-locale-dir(rtl) {
   background-position: left;
 }
 
