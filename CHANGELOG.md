@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.13.0
+- add mixed-mode SSL styling
+- improve findbar appearance
+- support Pale Moon 30
+
 ### 1.12.0
 - support other GTK-based operating systems
 - provide platform-specific custom statusbar styling to ensure it works in all platforms
