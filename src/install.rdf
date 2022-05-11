@@ -16,7 +16,6 @@
     <em:type>4</em:type>
     <em:internalName>darkpitch</em:internalName>
     <em:skinnable>true</em:skinnable>
-    <em:updateURL>https://raw.githubusercontent.com/Lootyhoof/darkmoon/master/update.xml</em:updateURL>
 
     <em:contributor>Tim Banker</em:contributor>
 		
