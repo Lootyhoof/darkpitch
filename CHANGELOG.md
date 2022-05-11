@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.14.0
+- initial HTML date/time picker support
+- support Pale Moon 31
+
 ### 1.13.0
 - add mixed-mode SSL styling
 - improve findbar appearance
