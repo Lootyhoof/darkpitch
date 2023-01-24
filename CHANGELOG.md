@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.14.1
+- support Pale Moon 32
+
 ### 1.14.0
 - initial HTML date/time picker support
 - support Pale Moon 31
